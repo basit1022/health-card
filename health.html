@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康证明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .header-bar {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+        }
+        .header-bar .close-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+        .header-bar .menu-btn {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+        .container {
+            padding: 15px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: 500;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title .icon {
+            color: #2196F3;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 17px;
+        }
+        .info-item .label {
+            color: #666;
+        }
+        .info-item .value {
+            color: #333;
+            text-align: right;
+        }
+        .photo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 17px;
+        }
+        .photo-item .label {
+            color: #666;
+        }
+        .photo-item img {
+            width: 120px;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bar">
+        <span class="close-btn">×</span>
+        健康证明
+        <span class="menu-btn">⋯</span>
+    </div>
+
+    <div class="container">
+        <!-- 基础信息 -->
+        <div class="section-title">
+            <span class="icon">📄</span>
+            基础信息
+        </div>
+        <div class="info-item">
+            <span class="label">证件类型</span>
+            <span class="value">居民身份证</span>
+        </div>
+        <div class="info-item">
+            <span class="label">证件号码</span>
+            <span class="value">370781200105206512</span>
+        </div>
+        <div class="info-item">
+            <span class="label">姓名</span>
+            <span class="value">牟传栋</span>
+        </div>
+        <div class="info-item">
+            <span class="label">性别</span>
+            <span class="value">男</span>
+        </div>
+        <div class="info-item">
+            <span class="label">出生日期</span>
+            <span class="value">2001-05-20</span>
+        </div>
+
+        <!-- 个人信息 -->
+        <div class="section-title">
+            <span class="icon">👤</span>
+            个人信息
+        </div>
+        <div class="info-item">
+            <span class="label">年龄</span>
+            <span class="value">25</span>
+        </div>
+        <div class="info-item">
+            <span class="label">联系方式</span>
+            <span class="value"></span>
+        </div>
+        <div class="info-item">
+            <span class="label">文化程度</span>
+            <span class="value"></span>
+        </div>
+        <div class="photo-item">
+            <span class="label">个人照片</span>
+            < img src="https://p3-flow-image-sign.byteimg.com/tos-cn-i-a9rns3rl9r/5d001001001c40189090090000000000~tplv-a9rns3rl9r-image.image" alt="个人照片">
+        </div>
+
+        <!-- 单位信息 -->
+        <div class="section-title">
+            <span class="icon">🏢</span>
+            单位信息
+        </div>
+        <div class="info-item">
+            <span class="label">专业类别</span>
+            <span class="value">食品/公共场所</span>
+        </div>
+        <div class="info-item">
+            <span class="label">工龄</span>
+            <span class="value"></span>
+        </div>
+
+        <!-- 健康证信息 -->
+        <div class="section-title">
+            <span class="icon">🕒</span>
+            健康证信息
+        </div>
+        <div class="info-item">
+            <span class="label">发证日期</span>
+            <span class="value">2025-04-05</span>
+        </div>
+        <div class="info-item">
+            <span class="label">有效期至</span>
+            <span class="value">2026-04-04</span>
+        </div>
+        <div class="info-item">
+            <span class="label">健康证编码</span>
+            <span class="value">0003L012504050002</span>
+        </div>
+        <div class="info-item">
+            <span class="label">发证机构</span>
+            <span class="value">杭州市上城区紫阳街道社区卫生服务</span>
+        </div>
+    </div>
+</body>
+</html>
